@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
+    <link rel="stylesheet" href="estilos.css">    
+    <title>Proyect OCR</title>
+</head>
+<body>
+    <div class="contenedor">
+
+        <h1>Extractor de texto</h1>
+
+        <input type="file" id="cargarImagen" accept="image/*">
+        <label for="cargarImagen">Cargar imagen</label>
+       
+        <div id="zonaPegado"  class="zona-pegado" contenteditable="true" data-placeholder="Pegar imagen aqui"></div>
+
+        <img id="vistaPrevia" src="" alt="Vista previa de la imagen" style="display: none;">
+
+        <button id="extraerTexto">Extraer texto</button>
+
+        <pre id="resultado"></pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
